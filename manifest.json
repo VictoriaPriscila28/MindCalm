@@ -8,13 +8,13 @@
     {
       "src": "196.png",
       "sizes": "196x196",
-      "type": "icons/196.png",
+      "type": "/icons/196.png",
       "purpose": "any"
     },
     {
         "src": "512.png",
         "sizes": "512x512",
-        "type": "icons/512.png",
+        "type": "/icons/512.png",
         "purpose": "maskable"
       }
   ],
