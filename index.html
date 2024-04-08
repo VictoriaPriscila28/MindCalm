@@ -5,23 +5,145 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="author" content="Grupo 5">
     <meta name="theme-color" content="#ffffff">
-    <link rel="stylesheet" href="styles.css">
+ 
     <link rel="manifest" href="manifest.json">
-    <title>Reproduzindo Tela</title>
+    <!--=============== BOXICONS ===============-->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/boxicons@latest/css/boxicons.min.css">
+
+    <!--=============== CSS ===============-->
+    <link rel="stylesheet" href="assets/css/styles.css">
+    <title>Health</title>
 </head>
-<body>
-    <div class="container">
-        <!-- Adicione os elementos da tela aqui -->
-        <p> </p>
-    </div>
-    <!-- Bottom Navigation Start -->
-    <div class="navbar">
-        <a href="#home" class="active">Home</a>
-        <a href="#news">Conversa</a>
-        <a href="#contact">Adicionar</a>
-        <a href="#contact">Estatísticas</a>
-        <a href="#news">Mais</a>
-      </div>
-    <!-- Bottom Navigation End -->
-</body>
+    <body>
+        <!--=============== HEADER ===============-->
+        <header class="header" id="header">
+            <nav class="nav container">
+                <a href="#" class="nav__logo">Geraldo</a>
+
+                <div class="nav__menu" id="nav-menu">
+                    <ul class="nav__list">
+                        <li class="nav__item">
+                            <a href="#home" class="nav__link active-link">
+                                <i class='bx bx-home-alt nav__icon'></i>
+                                <span class="nav__name">Home</span>
+                            </a>
+                        </li>
+                        
+                        <li class="nav__item">
+                            <a href="#about" class="nav__link">
+                                <i class='bx bx-user nav__icon'></i>
+                                <span class="nav__name">Conversa</span>
+                            </a>
+                        </li>
+
+                        <li class="nav__item">
+                            <a href="#skills" class="nav__link">
+                                <i class='bx bx-book-alt nav__icon'></i>
+                                <span class="nav__name">Skills</span>
+                            </a>
+                        </li>
+
+                        <li class="nav__item">
+                            <a href="#portfolio" class="nav__link">
+                                <i class='bx bx-briefcase-alt nav__icon'></i>
+                                <span class="nav__name">Estatística</span>
+                            </a>
+                        </li>
+
+                        <li class="nav__item">
+                            <a href="#contactme" class="nav__link">
+                                <i class='bx bx-message-square-detail nav__icon'></i>
+                                <span class="nav__name">Mais</span>
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+
+                <img src="assets/img/perfil.png" alt="" class="nav__img">
+            </nav>
+        </header>
+
+        <main>
+            <!--=============== HOME ===============-->
+            <section class="container section section__height" id="home">
+                <h2 class="section__title">Home</h2>
+                <button type="button" id="btn_permission">Permissão</button>
+                <p>Clique no botão para comparar a distância até o Studio:</p>
+                        
+                        <button onclick="getLocation()">Obter Localização</button>
+                        <p id="distance"></p>
+
+                        <script>
+                            function getLocation() {
+                                if (navigator.geolocation) {
+                                    navigator.geolocation.getCurrentPosition(showPosition, showError);
+                                } else {
+                                    alert("Geolocalização não é suportada pelo seu navegador.");
+                                }
+                            }
+
+                            function showPosition(position) {
+                                // Coordenadas da localização atual
+                                const latitude = position.coords.latitude;
+                                const longitude = position.coords.longitude;
+
+                                // Coordenadas de um ponto de referência (por exemplo, outro local)
+                                const referenceLatitude = -7.9106702; // Latitude 
+                                const referenceLongitude = -34.8337683; // Longitude 
+                               
+
+                                // Cálculo da distância entre os pontos (usando a fórmula de Haversine)
+                                const distance = calculateDistance(latitude, longitude, referenceLatitude, referenceLongitude);
+
+                                // Exibindo a distância
+                                document.getElementById("distance").textContent = `Distância até o Studio Classe A: ${distance.toFixed(2)} km`;
+                            }
+
+                            function showError(error) {
+                                alert(`Erro ao obter a localização: ${error.message}`);
+                            }
+
+                            function calculateDistance(lat1, lon1, lat2, lon2) {
+                                const R = 6371; // Raio médio da Terra em quilômetros
+                                const dLat = degToRad(lat2 - lat1);
+                                const dLon = degToRad(lon2 - lon1);
+                                const a =
+                                    Math.sin(dLat / 2) * Math.sin(dLat / 2) +
+                                    Math.cos(degToRad(lat1)) * Math.cos(degToRad(lat2)) *
+                                    Math.sin(dLon / 2) * Math.sin(dLon / 2);
+                                const c = 2 * Math.atan2(Math.sqrt(a), Math.sqrt(1 - a));
+                                return R * c;
+                            }
+
+                            function degToRad(deg) {
+                                return deg * (Math.PI / 180);
+                            }
+                        </script>
+            </section>
+
+            <!--=============== ABOUT ===============-->
+            <section class="container section section__height" id="about">
+                <h2 class="section__title">About</h2>
+            </section>
+
+            <!--=============== SKILLS ===============-->
+            <section class="container section section__height" id="skills">
+                <h2 class="section__title">Skills</h2>
+            </section>
+
+            <!--=============== PORTFOLIO ===============-->
+            <section class="container section section__height" id="portfolio">
+                <h2 class="section__title">Portfolio</h2>
+            </section>
+
+            <!--=============== CONTACTME ===============-->
+            <section class="container section section__height" id="contactme">
+                <h2 class="section__title">Contactme</h2>
+            </section>
+        </main>
+        
+
+        <!--=============== MAIN JS ===============-->
+        <script src="assets/js/main.js"></script>
+    </body>
 </html>
