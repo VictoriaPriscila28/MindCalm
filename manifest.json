@@ -1,145 +1,27 @@
-<<<<<<< HEAD
 {
   "name": "MindCalm",
   "short_name": "MindCalm",
-  "description": "Um aplicativo destinado a promover o bem-estar emocional e mental dos usuários, oferecendo recursos para gerenciar o estresse, ansiedade e promover a saúde mental positiva.",
-  "version": "1.0",
-  "author": "Grupo 5",
-  "icons": [
-    {
-      "src": "196.png",
-      "sizes": "196x196",
-      "type": "/icons/196.png",
-      "purpose": "any"
-    },
-    {
-        "src": "512.png",
-        "sizes": "512x512",
-        "type": "/icons/512.png",
-        "purpose": "maskable"
-      }
-  ],
-  "start_url": "/index.html",
-  "display": ["standalone", "fullscreen", "minimal-ui", "browser", "window-controls-overlay"],
-  "theme_color": "#ffffff",
-  "background_color": "#ffffff",
-  "content_security_policy": "default-src 'self'; script-src 'self' 'unsafe-inline'; style-src 'self' 'unsafe-inline'",
-  "permissions": [],
-  "scope": "/",
+  "start_url": "index.html",
+  "lang": "pt",
+  "theme_color": "#d63384",
+  "background_color": "#fff",
+  "display": "standalone",
   "orientation": "portrait",
-  "lang": "pt-BR",
-  "categories": [
-    "health",
-    "lifestyle",
-    "medical",
-    "personalization",
-    "utilities"
-  ],
-  "serviceworker": {
-    "src": "/service-worker.js",
-    "scope": "/"
-  },
-  "prefer_related_applications": true,
-  "related_applications": [],
-  "clinicas": [
-    {
-      "nome": "Clínica MultiNós – Centro Integrado de Especialidades",
-      "contato": "(81) 98222-6960",
-      "especializacoes": ["Psicanálise", "Transtorno Bipolar", "TOC", "Depressão", "Ansiedade", "Esquizofrenia", "Transtornos Alimentares", "Outros"],
-      "publico_alvo": ["Crianças", "Adolescentes", "Idosos", "Comunidade LGBT+"],
-      "teleconsulta": true,
-      "localidade": "Avenida Governador Agamenon Magalhães 2939"
-    },
-    {
-      "nome": "Clínica Waleska Andrade",
-      "contato": "(81) 99808-8592",
-      "especializacoes": ["Ansiedade", "Síndrome do Pânico", "Esgotamento Profissional", "Depressão"],
-      "aceita_plano_saude": true,
-      "localidade": "R. Gervásio Fioravante, 120 - Graças, Recife - PE, 52011-030"
-    },
-    {
-      "nome": "Instituto Monteiro de Neuromodulação",
-      "contato": "(81) 99907-6551",
-      "especializacoes": ["Psiquiatria Clínica", "Psicoterapia", "Neuromodulação"],
-      "tecnicas": ["Estimulação Transcraniana por Corrente Contínua", "Estimulação Magnética Transcraniana", "Eletroconvulsoterapia"],
-      "tratamentos": ["Ansiedade", "TDAH", "Transtornos Alimentares", "Outros"],
-      "localidade": "Av. Eng. Domingos Ferreira, nº 636"
-    },
-    {
-      "nome": "Instituto Sono e Mente",
-      "contato": "(81) 3031-1638",
-      "especializacoes": ["Insônia", "Depressão", "Anorexia Nervosa", "Ataques de Pânico", "TDAH", "Crises Suicidas"],
-      "localidade": "Rua José Carvalheira 100 - Sala 404"
-    },
-    {
-      "nome": "Psicólogos Associados de Pe",
-      "contato": "(81) 3034-6735",
-      "especializacoes": ["EMDR", "TCC", "Psicoterapia Infantil", "Adolescente", "Adulto", "Melhor Idade", "Dependência Química", "Terapia de Casal", "Neuropsicologia", "Base Analítica", "Gestalt", "Humanista"],
-      "profissionais": ["Psicopedagogos", "Acupunturistas", "Professores de Reforço", "Professores de Idiomas"],
-      "localidade": "RUA GENERAL ABREU E LIMA, 285 - ROSARINHO"
-    },
-    {
-      "nome": "Clínica Mediar",
-      "contato": "(81) 3465-8209",
-      "especializacoes": ["Psicanálise", "Sexologia", "Psiquiatria", "Nutrição"],
-      "apoio_emocional": ["Mães de Primeira Viagem", "Relações Familiares", "Inclusão Escolar", "Outros"],
-      "localidade": "Avenida Republica do Libano 251, Torre"
-    },
-    {
-      "nome": "Hospital Virtude",
-      "contato": "(81) 98265-0101",
-      "especializacoes": ["Ajuda Psicológica", "Psiquiatria", "Clínico Geral"],
-      "localidade": "Av. Eng. Domingos Ferreira, 310, Pina, Recife"
-    },
-    {
-      "nome": "Clínica Espaço Saúde",
-      "contato": "(81) 98585-0619",
-      "especializacoes": ["Psicologia", "Psiquiatria", "Fisioterapia"],
-      "tratamentos": ["Terapia de Casal", "Teste Vocacional", "Psicoterapia em Grupo", "Depressão", "Psicanálise", "Outros"],
-      "localidade": "Avenida Conselheiro Rosa e Silva 1460"
-    },
-    {
-      "nome": "Recriar Clínica de Atendimento Psicológico",
-      "contato": "(81) 99476-4772",
-      "especializacoes": ["Atendimento LGBT+", "Psicanálise", "Psicopedagogia", "Neuropsicologia", "Acompanhamento Psiquiátrico"],
-      "combate": ["Ansiedade", "Depressão", "Transtorno Bipolar", "Outros"],
-      "localidade": "Av. Conselheiro Aguiar, 2738 - sala 304 - Boa Viagem"
-    },
-    {
-      "nome": "Instituto Cavalcanti",
-      "contato": "(81) 4042-3426",
-      "especializacoes": ["Ansiedade", "TDAH", "Síndrome do Pânico", "Depressão", "TOC", "Transtorno Afetivo"],
-      "atendimento": ["Presencial", "Remoto"],
-      "publico_alvo": ["Adolescentes", "Idosos", "Casais"],
-      "localidade": "Av. Gov. Agamenon Magalhães, 4318"
-    }
-  ]
-}
-=======
-{
-    "name": "MindCalm",
-    "short_name": "MindCalm",
-    "start_url": "index.html",
-    "lang": "pt",
-    "theme_color": "#",
-    "background_color": "#fff",
-    "display": "standalone",
-    "orientation": "portrait",
-    "scope": "/",
-    "icons": [
-      
+  "scope": "/",
+  "icons": [
       {
-        "src": "img/android/icon_android5.png",
-        "sizes": "192x192",
+        "src": "assets/icons/512.png",
+        "sizes": "196x196",
         "type": "image/png",
         "purpose": "any"
       },
       {
-        "src": "img/ios/512.png",
-        "sizes": "512x512",
-        "type": "image/png",
-        "purpose": "maskable"
-      }
-    ]
-  }
->>>>>>> 327a115 (atualização dos arquivos)
+          "src": "assets/icons/512.png",
+          "sizes": "512x512",
+          "type": "image/png",
+          "purpose": "maskable"
+        }
+  ]
+}
+
+

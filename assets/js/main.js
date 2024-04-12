@@ -58,4 +58,8 @@ spawnNotification({
         icon: "assets/icons/playstore.png", // Ícone opcional
     },
     link: "/detalhes-da-venda" // Link opcional
-});
+
+
+
+
+})(jQuery);
