@@ -249,3 +249,26 @@ img {
   }
 }
 
+/* styles.css */
+.icon-container {
+  position: absolute;
+  top: 0;
+  left: 0;
+  padding: 10px;
+}
+
+
+.icon-container2 {
+  display: flex;
+  justify-content: flex-end; /* Alinha os ícones à direita */
+  gap: 10px; /* Espaçamento entre os ícones */
+}
+
+.square {
+  width: 24px;
+  height: 24px;
+  /* Estilos adicionais para o contêiner dos ícones */
+}
+
+
+
