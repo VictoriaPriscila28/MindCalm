@@ -270,5 +270,22 @@ img {
   /* Estilos adicionais para o contêiner dos ícones */
 }
 
+ /* Estilos para o background da navegação */
+.navbar-background {
+  height: calc(100vh / 3); /* Altura de 1/3 da tela */
+  background-image: url('../img/pinheiros.jpg'); /* Caminho da imagem de fundo */
+  background-size: cover; /* Cobrir todo o espaço disponível */
+  background-position: center; /* Centralizar a imagem */
+  width: 100%; /* Largura total */
+  position: fixed; /* Para que o background fique fixo na tela */
+  top: 0; /* Alinhar ao topo */
+  left: 0; /* Alinhar à esquerda */
+  z-index: -1; /* Enviar para trás dos outros elementos */
+  color: #fff; /* Cor do texto */
+  padding: 20px; /* Espaçamento interno */
+  text-align: center; /* Alinhar o texto ao centro */
+}
+
+
 
 
