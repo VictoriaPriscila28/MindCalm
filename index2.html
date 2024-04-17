@@ -1,0 +1,88 @@
+<!--=============== HOME ===============-->
+<section class="container section section__height" id="home">
+    <h2 class="section__title">Home</h2>
+    
+    <button type="button" id="btn_permission">Permissão</button>
+    <p>Clique no botão para comparar a distância até o Studio:</p>
+            
+            <button onclick="getLocation()">Obter Localização</button>
+            <p id="distance"></p>
+
+            <script>
+                function getLocation() {
+                    if (navigator.geolocation) {
+                        navigator.geolocation.getCurrentPosition(showPosition, showError);
+                    } else {
+                        alert("Geolocalização não é suportada pelo seu navegador.");
+                    }
+                }
+
+                function showPosition(position) {
+                    // Coordenadas da localização atual
+                    const latitude = position.coords.latitude;
+                    const longitude = position.coords.longitude;
+
+                    // Coordenadas de um ponto de referência (por exemplo, outro local)
+                    const referenceLatitude = -7.9106702; // Latitude 
+                    const referenceLongitude = -34.8337683; // Longitude 
+                   
+
+                    // Cálculo da distância entre os pontos (usando a fórmula de Haversine)
+                    const distance = calculateDistance(latitude, longitude, referenceLatitude, referenceLongitude);
+
+                    // Exibindo a distância
+                    document.getElementById("distance").textContent = `Distância até o Studio Classe A: ${distance.toFixed(2)} km`;
+                }
+
+                function showError(error) {
+                    alert(`Erro ao obter a localização: ${error.message}`);
+                }
+
+                function calculateDistance(lat1, lon1, lat2, lon2) {
+                    const R = 6371; // Raio médio da Terra em quilômetros
+                    const dLat = degToRad(lat2 - lat1);
+                    const dLon = degToRad(lon2 - lon1);
+                    const a =
+                        Math.sin(dLat / 2) * Math.sin(dLat / 2) +
+                        Math.cos(degToRad(lat1)) * Math.cos(degToRad(lat2)) *
+                        Math.sin(dLon / 2) * Math.sin(dLon / 2);
+                    const c = 2 * Math.atan2(Math.sqrt(a), Math.sqrt(1 - a));
+                    return R * c;
+                }
+
+                function degToRad(deg) {
+                    return deg * (Math.PI / 180);
+                }
+            </script>
+</section>
+
+
+
+
+
+<!--=============== ABOUT ===============-->
+<section class="container section section__height" id="about">
+    <h2 class="section__title">About</h2>
+    
+   
+
+<!--=============== SKILLS ===============-->
+<section class="container section section__height" id="skills">
+    <h2 class="section__title">Skills</h2>
+     <!-- Botão para mostrar os horários -->
+     <button id="mostrarHorarios">Mostrar Horários</button>
+        
+     <!-- Div onde os horários serão exibidos -->
+     <div id="horarios"></div>
+</section>
+
+<!--=============== PORTFOLIO ===============-->
+<section class="container section section__height" id="portfolio">
+    <h2 class="section__title">Portfolio</h2>
+</section>
+
+<!--=============== CONTACTME ===============-->
+<section class="container section section__height" id="contactme">
+    <h2 class="section__title">Contactme</h2>
+</section>
+</main>

@@ -271,7 +271,7 @@ img {
 }
 
  /* Estilos para o background da navegação */
-.navbar-background {
+ .navbar-background {
   height: calc(100vh / 3); /* Altura de 1/3 da tela */
   background-image: url('../img/pinheiros.jpg'); /* Caminho da imagem de fundo */
   background-size: cover; /* Cobrir todo o espaço disponível */
@@ -279,12 +279,16 @@ img {
   width: 100%; /* Largura total */
   position: fixed; /* Para que o background fique fixo na tela */
   top: 0; /* Alinhar ao topo */
-  left: 0; /* Alinhar à esquerda */
   z-index: -1; /* Enviar para trás dos outros elementos */
-  color: #fff; /* Cor do texto */
-  padding: 20px; /* Espaçamento interno */
-  text-align: center; /* Alinhar o texto ao centro */
+  color: #883f3f; /* Cor do texto */
+  padding: 10px; /* Espaçamento interno */
+  text-align: left; /* Alinhar o texto a esquerda*/
+  font-size: 14px; /* Tamanho da fonte */
+  position: absolute; /* Posição absoluta para sobrepor a imagem de fundo */
+  bottom: 0; /* Alinhar ao canto inferior */
+  left: 0; /* Alinhar ao canto esquerdo */
 }
+
 
 
 
