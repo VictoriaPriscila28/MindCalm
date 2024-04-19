@@ -25,13 +25,10 @@
 
     <nav class="navbar">
         <a href="index.html">home</a>
-        <a href="#about">conversa</a>
-        <a href="conversa.html" class="logo active">Contato</a>
-        <a href="#services">estatistica</a>
-        <a href="#doctors">mais</a>
-        <a href="#appointment">appointment</a>
-        <a href="#review">review</a>
-        <a href="#blogs">blogs</a>
+        <a href="clinicas.html">clinicas</a>
+        <a href="conversa.html" class="logo active">contato</a>
+        <a href="#services">mais</a>
+        
     </nav>
 
     <div id="menu-btn" class="fas fa-bars"></div>
@@ -46,7 +43,7 @@
 
 <section class="appointment" id="appointment">
 
-    <h1 class="heading"> <span>appointment</span> now </h1>    
+    <h1 class="heading"> <span>Entre em contato</h1>    
 
     <div class="row">
 
@@ -57,16 +54,19 @@
         <form action="<?php echo $_SERVER['PHP_SELF'];?>" method="post">
       
       
-            <h3>make appointment</h3>
-            <input type="text"name="name" placeholder="your name" class="box">
-            <input type="number"name="number" placeholder="your number" class="box">
-            <input type="email"name="email" placeholder="your email" class="box">
-            <input type="date"name="date" class="box">
-            <input type="submit" name="submit" value="appointment now" class="btn">
+            <h3>Entre em contato</h3>
+            <input type="text"name="name" placeholder="nome" class="box">
+            <input type="number"name="number" placeholder="numero" class="box">
+            <input type="email"name="email" placeholder=" email" class="box">
+            <input type="date"name="data" class="box">
+            <input type="submit" name="submit" value="Envie" class="btn">
         </form>
 
     </div>
 
 </section>
+<script src="js/script.js"></script>
+</body>
+</html>
 
 <!-- appointmenting section ends -->

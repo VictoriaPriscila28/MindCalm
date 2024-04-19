@@ -1,0 +1,270 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="theme-color" content="#16a085" />
+    <title>MindCalm</title>
+
+    <!-- font awesome cdn link  -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+
+    <!-- custom css file link  -->
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="manifest" href="manifest.json">
+
+</head>
+<body>
+    
+<!-- header section starts  -->
+
+<header class="header">
+
+    <a href="#" class="logo"> <i class="fas fa-heartbeat"></i> <strong>MindCalm</</a>
+
+    <nav class="navbar">
+
+        <a href="index.html">Home</a>
+        <a href="conversa.html">Conversa</a>
+        <a href="clinicas.html">Clínicas</a>
+        <a href="servicos.html">Mais</a>
+        
+    </nav>
+
+    <div id="menu-btn" class="fas fa-bars"></div>
+
+    
+
+</header>
+
+<!-- header section ends -->
+<!-- doctors section starts  -->
+
+<section class="doctors  " id="doctors">
+
+    <h1 class="heading "> clinicas <span>parceiras</span> </h1>
+
+    <div class="box-container ">
+
+        <div class="box ">
+            <img src="image/doc-1.jpg" alt="">
+            <h3>win coder</h3>
+            <span>expert doctor</span>
+            <div class="share">
+            <a href="#" class="fab fa-facebook-f"></a>
+                <a href="#" class="fab fa-twitter"></a>
+                <a href="#" class="fab fa-instagram"></a>
+                <a href="#" class="fab fa-linkedin"></a>
+                
+            </div>
+        </div>
+
+        <div class="box">
+            <img src="image/doc-2.jpg" alt="">
+            <h3>win coder</h3>
+            <span>expert doctor</span>
+            <div class="share">
+            <a href="#" class="fab fa-facebook-f"></a>
+                <a href="#" class="fab fa-twitter"></a>
+                <a href="#" class="fab fa-instagram"></a>
+                <a href="#" class="fab fa-linkedin"></a>
+            </div>
+        </div>
+
+        <div class="box">
+            <img src="image/doc-3.jpg" alt="">
+            <h3>win coder</h3>
+            <span>expert doctor</span>
+            <div class="share">
+            <a href="#" class="fab fa-facebook-f"></a>
+                <a href="#" class="fab fa-twitter"></a>
+                <a href="#" class="fab fa-instagram"></a>
+                <a href="#" class="fab fa-linkedin"></a>
+            </div>
+        </div>
+
+        <div class="box">
+            <img src="image/doc-4.jpg" alt="">
+            <h3>win coder</h3>
+            <span>expert doctor</span>
+            <div class="share">
+            <a href="#" class="fab fa-facebook-f"></a>
+                <a href="#" class="fab fa-twitter"></a>
+                <a href="#" class="fab fa-instagram"></a>
+                <a href="#" class="fab fa-linkedin"></a>
+            </div>
+        </div>
+
+        <div class="box">
+            <img src="image/doc-5.jpg" alt="">
+            <h3>win coder</h3>
+            <span>expert doctor</span>
+            <div class="share">
+            <a href="#" class="fab fa-facebook-f"></a>
+                <a href="#" class="fab fa-twitter"></a>
+                <a href="#" class="fab fa-instagram"></a>
+                <a href="#" class="fab fa-linkedin"></a>
+            </div>
+        </div>
+
+        <div class="box">
+            <img src="image/doc-6.jpg" alt="">
+            <h3>win coder</h3>
+            <span>expert doctor</span>
+            <div class="share">
+            <a href="#" class="fab fa-facebook-f"></a>
+                <a href="#" class="fab fa-twitter"></a>
+                <a href="#" class="fab fa-instagram"></a>
+                <a href="#" class="fab fa-linkedin"></a>
+            
+            </div>
+        </div>
+        <div class="box">
+            <img src="image/doc-7.jpg" alt="">
+            <h3>win coder</h3>
+            <span>intern doctor</span>
+            <div class="share">
+                
+                <a href="#" class="fab fa-twitter"></a>
+                <a href="#" class="fab fa-instagram"></a>
+                <a href="#" class="fab fa-linkedin"></a>
+            </div>
+        </div>
+        <div class="box">
+            <img src="image/doc-8.jpg" alt="">
+            <h3>win coder</h3>
+            <span>expert doctor</span>
+            <div class="share">
+            <a href="#" class="fab fa-facebook-f"></a>
+                <a href="#" class="fab fa-twitter"></a>
+                <a href="#" class="fab fa-instagram"></a>
+                <a href="#" class="fab fa-linkedin"></a>
+            </div>
+        </div>
+        <div class="box">
+            <img src="image/doc-9.jpg" alt="">
+            <h3>win coder</h3>
+            <span>expert doctor</span>
+            <div class="share">
+            <a href="#" class="fab fa-facebook-f"></a>
+                <a href="#" class="fab fa-twitter"></a>
+                <a href="#" class="fab fa-instagram"></a>
+                <a href="#" class="fab fa-linkedin"></a>
+            </div>
+        </div>
+
+    </div>
+
+</section>
+
+<!-- doctors section ends -->
+
+
+
+
+<!-- doctors section starts  -->
+<section class="clinicas" id="clinicas">
+  
+    <div class="box-container grid-container"></div>
+</section>
+
+<script>
+    async function loadClinics() {
+        try {
+            const response = await fetch('clinicas.json');
+            const data = await response.json();
+            renderClinics(data.clinicas);
+        } catch (error) {
+            console.error('Erro pra carregar as clínicas:', error);
+        }
+    }
+
+    function renderClinics(clinicas) {
+        const boxContainer = document.querySelector('.box-container');
+        clinicas.forEach(clinica => {
+            const box = createClinicBox(clinica);
+            boxContainer.appendChild(box);
+        });
+    }
+
+    function createClinicBox(clinica) {
+        const box = document.createElement('div');
+        box.classList.add('box');
+        box.innerHTML = `
+            <h3>${clinica.nome}</h3>
+            <p><strong>Endereço:</strong> ${clinica.endereco}, ${clinica.cidade}</p>
+            <p><strong>Especialidades:</strong> ${clinica.especialidades.join(', ')}</p>
+            <p><strong>Horário de Funcionamento:</strong></p>
+            <ul>
+                <li><strong>Segunda:</strong> ${clinica.horario_funcionamento.segunda}</li>
+                <li><strong>Terça:</strong> ${clinica.horario_funcionamento.terca}</li>
+                <li><strong>Quarta:</strong> ${clinica.horario_funcionamento.quarta}</li>
+                <li><strong>Quinta:</strong> ${clinica.horario_funcionamento.quinta}</li>
+                <li><strong>Sexta:</strong> ${clinica.horario_funcionamento.sexta}</li>
+            </ul>
+        `;
+        return box;
+    }
+    window.addEventListener('load', loadClinics);
+</script>
+
+<h1>Clique no botão para comparar a distância até a clinica central:</h1>
+                        
+                        <button onclick="getLocation()">Obter Localização</button>
+                        <p id="distance"></p>
+
+                        <script>
+                            function getLocation() {
+                                if (navigator.geolocation) {
+                                    navigator.geolocation.getCurrentPosition(showPosition, showError);
+                                } else {
+                                    alert("Geolocalização não é suportada pelo seu navegador.");
+                                }
+                            }
+
+                            function showPosition(position) {
+                                // Coordenadas da localização atual
+                                const latitude = position.coords.latitude;
+                                const longitude = position.coords.longitude;
+
+                                // Coordenadas de um ponto de referência (por exemplo, outro local)
+                                const referenceLatitude = -8.055560554153152; // Latitude 
+                                const referenceLongitude = -34.89215352190122; // Longitude 
+                                
+
+                                // Cálculo da distância entre os pontos (usando a fórmula de Haversine)
+                                const distance = calculateDistance(latitude, longitude, referenceLatitude, referenceLongitude);
+
+                                // Exibindo a distância
+                                document.getElementById("distance").textContent = `Distância até a clinica central é: ${distance.toFixed(2)} km`;
+                            }
+                                document.getElementById("distance").style.fontSize = "20px";
+
+                            function showError(error) {
+                                alert(`Erro ao obter a localização: ${error.message}`);
+                            }
+
+                            function calculateDistance(lat1, lon1, lat2, lon2) {
+                                const R = 6371; // Raio médio da Terra em quilômetros
+                                const dLat = degToRad(lat2 - lat1);
+                                const dLon = degToRad(lon2 - lon1);
+                                const a =
+                                    Math.sin(dLat / 2) * Math.sin(dLat / 2) +
+                                    Math.cos(degToRad(lat1)) * Math.cos(degToRad(lat2)) *
+                                    Math.sin(dLon / 2) * Math.sin(dLon / 2);
+                                const c = 2 * Math.atan2(Math.sqrt(a), Math.sqrt(1 - a));
+                                return R * c;
+                            }
+
+                            function degToRad(deg) {
+                                return deg * (Math.PI / 180);
+                            }
+                        </script>
+
+                        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d987.6121861315145!2d-34.892995735572335!3d-8.05562429197185!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x7ab18e9beb5c85d%3A0xd4e2aac2deff7bb3!2sAMPARE%20-%20Associa%C3%A7%C3%A3o%20dos%20Amigos%20dos%20Pacientes%20de%20P%C3%A2nico%20em%20Recife!5e0!3m2!1spt-BR!2sbr!4v1713530297264!5m2!1spt-BR!2sbr" width="800" height="600" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+
+<!-- doctors section ends -->
+<script src="js/script.js"></script>
+</body>
+</html>
