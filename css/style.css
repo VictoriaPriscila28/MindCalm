@@ -680,21 +680,22 @@ section:nth-child(even){
 
 
 button { 
-	width: 100%; 
-	padding: 8px; 
-	margin-bottom: 16px; 
-	box-sizing: border-box; 
-	border-radius: 15px; 
-	background-color: rgb(105, 152, 111); 
-	color: rgb(183, 213, 179); 
-	font-size: 17px; 
-	font-weight: 700; 
-	border: #a2c2ee; 
+    width: 120px; /* Largura do botão */
+    height: 50px; /* Altura do botão */
+    padding: 8px; 
+    margin-bottom: 16px; 
+    box-sizing: border-box; 
+    border-radius: 10px; /* Bordas arredondadas para criar uma aparência quadrada */
+    background-color: rgb(146, 231, 150); 
+    color: rgb(35, 143, 21); 
+    font-size: 17px; 
+    font-weight: 700; 
+    border: none; /* Removendo a borda para criar uma aparência mais limpa */
 } 
 
 button:hover { 
-	background-color: rgb(52, 98, 58); 
-} 
+    background-color: rgb(218, 218, 218); 
+}
 
 
 
@@ -702,4 +703,17 @@ button:hover {
 	text-align: center; 
 	color: green; 
 } 
+/* Estilos para centralizar o contêiner */
+.map-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh; /* Altura total da tela */
+}
 
+/* Estilos para o iframe */
+iframe {
+    width: 800px;
+    height: 600px;
+    border: 0;
+}
