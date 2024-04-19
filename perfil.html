@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Perfil</title>
+    <link rel="stylesheet" href="/assets/css/perfil.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <meta name="theme-color" content="#f5f2f6"/>
+    <meta name="description" content="App de Saude Mental">
+    
+</head>
+<body>
+
+    <h1>Perfil</h1>
+    <div class="dados">
+        <div class="perfil">
+            <img src="/assets/icones/avatar.svg" class="foto" alt="perfil">
+        </div>
+        <h2>Nome do usuário</h2>
+        <div class="infos">
+            <h3>CID:00000</h3>
+        </div>
+    </div>
+
+    <div class="opcoes">
+        <ul class="profile-menu">
+            <li><a href="#"><span>Configurações</span> <i class="fa-solid fa-gear"></i></a></li>
+            <li><a href="#"><span>Privacidade e Segurança</span> <i class="fa-solid fa-shield"></i></a></li>
+            <li><a href="#"><span>Notificações</span> <i class="fa-solid fa-bell"></i></a></li>
+            <li><a href="#"><span>Preferências</span> <i class="fa-solid fa-sliders"></i></a></li>
+            <li><a href="#"><span>Ajuda</span> <i class="fa-solid fa-circle-question"></i></a></li>
+            <li><a href="#" id="sair"><span>Sair</span> <i class="fa-solid fa-arrow-right-from-bracket"></i></a></li>
+        </ul>
+    </div>
+
+    <footer class="bottom-navbar">
+        <a href="home.html">
+            <i class="fas fa-home" alt="home"></i>
+            <span>Início</span>
+        </a>  
+        <a href="mapa.html">
+            <i class="fa-solid fa-map" alt="mapa"></i>
+            <span>Mapa</span>
+        </a>
+        <a href="diario.html">
+            <i class="fa-solid fa-book-open"></i>
+            <span>Diário</span>
+        </a>
+        <a href="chat.html">
+            <i class="fa-solid fa-comment"></i>
+            <span>Chat</span>
+        </a>
+        <a href="perfil.html">
+            <i class="fas fa-user" alt="perfil"></i>
+            <span>Perfil</span>
+        </a>
+    </footer>
+
+    <!-- Modal de Confirmação -->
+    <div id="modal-sair" class="modal">
+        <div class="modal-content">
+            <p class="djsair">Deseja sair?</p>
+            <div class="modal-buttons">
+                <button id="confirmar-sair" class="sim">Sim</button>
+                <button id="cancelar-sair" class="nao">Não</button>
+            </div>
+        </div>
+    </div>
+
+    <script src="/assets/js/sair.js"></script>
+
+</body>
+</html>

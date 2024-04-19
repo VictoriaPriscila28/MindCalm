@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+    <title>Login</title>
+    <link rel="stylesheet" href="/assets/css/login.css"  media="print" onload="this.media='all'">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <meta name="theme-color" content="#9978A7"/>
+    <meta name="description" content="App de Saude Mental">
+</head>
+<body>
+    <form class="form" onsubmit="return validateForm()">
+        <!--Parte superior-->
+        <!--Cabeçalho-->
+        <div class="titulos">
+            <a href="index.html" class="back"><span class="back-button" onclick="window.history.back()"><i class="fa-solid fa-caret-left"></i></span></a>
+            <h2>Entrar</h2>
+        </div>
+        <!--Cabeçalho Fim-->
+        <p>Seja Bem-Vindo(a)</p>
+        <!--Começo da logo-->
+        <div class="logo"><h1>Mind<br>Calm</h1></div>
+        <!--Fim da logo-->
+        <!--Parte superior Fim-->
+        <!--Inicio do Formulario-->
+        <div class="input-container">
+            <label class="input-label" for="email-tel">E-mail ou Telefone</label>
+            <input type="email" id="email-tel" required>
+        </div>
+        <div class="input-container">
+            <label class="input-label" for="pass">Senha</label>
+            <input type="password" id="pass" required>
+            <span class="password-toggle" onclick="togglePassword('pass')"></span>
+        </div>
+        <!--Fim do Formulario-->
+        <!--Inicio do Login-->
+        <div class="login">
+            <div class="lembrar">
+                <label class="switch">
+                    <input type="checkbox">
+                    <span class="slider"></span>
+                </label>
+                <span class="texto">Lembrar senha?</span>
+            </div>
+            <button type="submit" class="entrar" alt="botao-entrar">Entrar</button>
+        </div>
+        <p class="cad">Ainda não tem conta? <a href="cad.html">Cadastre-se Agora</a> </p>
+        <!--Fim do Login-->
+        <!--Inicio Forma de Login-->
+        <div class="login-container-lista">
+            <div class="buttons">
+                <div class="apple-button">
+                    <button class="apple" alt="botao-entrar" value="Entrar usando sua conta apple"><i class="fa-brands fa-apple"></i> Entrar usando sua conta apple</button>
+              </div>
+                <div class="google-button">
+                  <button class="google" alt="botao-entrar" value="Entrar usando sua conta google"><i class="fa-brands fa-google"></i> Entrar usando sua conta google</button>
+            </div>
+        <!--Fim Forma de Login-->
+    </form>
+    <script src="/assets/js/function.js"></script>
+</body>
+</html>

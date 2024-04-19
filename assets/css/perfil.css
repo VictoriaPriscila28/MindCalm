@@ -1,0 +1,194 @@
+@import url('https://fonts.googleapis.com/css2?family=Urbanist:ital,wght@0,100..900;1,100..900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Shadows+Into+Light+Two&family=Urbanist:ital,wght@0,100..900;1,100..900&display=swap');
+body{
+    padding: 0;
+    margin: 0;
+    font-weight: 500;
+    font-family: "Urbanist", sans-serif;
+    background-color:var(--cor--bg);
+    overflow-x: hidden;
+    height: 800px;
+    
+}
+
+:root {
+    --cor--fundo: #9978A7;
+    --cor--hover: #C4B1CC;
+    --cor--bg:#F5F2F6;
+    --cor--hover2: #AA8FB6;
+    --cor--bgwhite: #E1E1E1;
+    --cor--escura: #6B5475;
+ }
+
+  /* Estilos para o modal */
+  .modal {
+    display: none;
+    position: fixed;
+    z-index: 1;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5);
+}
+
+.modal-content {
+    background-color: #fefefe;
+    margin: 15% auto;
+    margin-top: 36vh;
+    padding: 20px;
+    border: 1px solid #888;
+    width: 80%;
+    max-width: 400px;
+    text-align: center;
+    border-radius: 20px;
+    
+}
+
+.modal-buttons {
+    margin-top: 10px;
+}
+
+.djsair {
+  margin-top: 10px;
+  margin-bottom: -1px;
+  font-family: urbanist;
+  font-size: 1.4rem;
+}
+
+.sim, .nao {
+ border-radius: 16px;
+ border: 2px solid var(--cor--fundo);
+ color: #6B5475;
+ background-color: transparent;
+ width: 80px;
+ height: 30px;
+ font-family: urbanist;
+ font-size: 1.2rem;
+}
+
+ h2{
+    color:var(--cor--escura);
+ }
+
+ p{
+  font-family: shadows into light two;
+  color: var(--cor--escura);
+  font-size: 1.3rem;
+  font-weight: 400;
+  margin-top: -20px;
+ }
+
+
+
+
+ .perfil{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 200px;
+    margin-bottom: -60px;
+} 
+
+.perfil img{
+    width: auto;
+    height: 120px;
+ }
+
+
+
+ .infos {
+    display: flex;
+    justify-content: center;
+}
+
+
+ h1{
+    text-align: center;
+    margin-bottom: -5px;
+    text-align: center;
+    margin-bottom: -2px;
+    font-size: 2rem;
+    margin-top: 25px;
+    font-family: shadows into light two; 
+    color:var(--cor--escura);
+  
+  }
+
+  h2{
+    text-align: center;
+    margin-bottom: -5px;
+    text-align: center;
+    margin-bottom: -2px;
+    font-size: 2rem;
+    margin-top: 25px;
+    font-family: shadows into light two;
+  
+  }
+
+
+ h3{
+    display: flex;
+    margin-left: 10px;
+    text-align: center;
+    display: flex;
+    margin-left: 10px;
+    text-align: center;
+    font-size: 1.2rem;
+    margin-top: -2px;
+    font-weight: 400;
+    color: #6B5475;
+ }
+
+
+ .profile-menu {
+   list-style-type: none;
+   padding: 0;
+   
+ }
+ .profile-menu li {
+   overflow: hidden;
+   margin-bottom: 10px;
+ }
+ .profile-menu li a {
+   display: block;
+   padding: 8px;
+   color: var(--cor--escura);
+   background-color: #e6e6e6;
+   text-decoration: none;
+   font-size: 18px;
+ }
+ .profile-menu li a:hover {
+   background-color: var(--cor--hover);
+ }
+
+
+/*Navegação*/
+.bottom-navbar {
+   z-index: 1000;
+     position: fixed;
+     bottom: 0;
+     width: 100%;
+     display: flex;
+     justify-content: space-around;
+     padding: 25px 0 ;
+     border-radius: 30px 30px 0px 0px;
+     background-color: var(--cor--fundo) 
+ }
+  
+  
+  .bottom-navbar a:hover {
+     color:var(--cor--hover);
+  }
+  
+  
+  .bottom-navbar a {
+   display: flex;
+  flex-direction: column;
+    align-items: center;
+  text-align: center;
+   text-decoration: none;
+    color: #fff;
+    font-size: 18px;
+      }
+ 

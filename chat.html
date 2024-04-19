@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta http-equiv="Cache-Control" content="max-age=3600, must-revalidate">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+    <title>Chat</title>
+    <link rel="stylesheet" href="/assets/css/chat.css"  media="print" onload="this.media='all'">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <meta name="theme-color" content="#e8e1eb"/>
+    <meta name="description" content="App de Saude Mental">
+</head>
+</head>
+<body>
+    <div class="container4">
+    <!--Parte superior-->
+    <!--Cabeçalho-->
+    <div class="header4">
+        <span class="logo">Chat</span>
+    </div>
+    <!--Cabeçalho Fim-->
+    <div class="titulos">
+    <h1>Psicóloga Disponivel</h1>
+</div>
+<div class="form">
+    <form id="whatsapp-form" onsubmit="generateWhatsAppLink()">
+        <div class="seu-nome">  <label for="name">Seu Nome:</label><br>
+        <input type="text" id="name" name="name" required class="nome"><br></div>
+      
+        <label for="message" class="mensg">Sua Mensagem:</label><br>
+        <textarea id="message" name="message" required placeholder="Mande uma mensagem, você não está só!"></textarea><br>
+        <button type="submit" class="enviar">Enviar</button>
+    </form></div>
+    <footer class="bottom-navbar">
+        <a href="home.html">
+            <i class="fas fa-home" alt="home"></i>
+            <span>Início</span>
+        </a>  <a href="mapa.html">
+            <i class="fa-solid fa-map" alt="mapa"></i>
+            <span>Mapa</span>
+        </a>
+        <a href="diario.html">
+            <i class="fa-solid fa-book-open"></i>
+            <span>Diário</span>
+        </a>
+      
+        <a href="chat.html">
+            <i class="fa-solid fa-comment"></i>
+            <span>Chat</span>
+        </a>
+        <a href="perfil.html" aria-label="area-perfil">
+            <i class="fas fa-user" alt="perfil"></i>
+            <span>Perfil</span>
+    </footer>
+    <script src="/assets/js/chat.js"></script>
+</body>
+</html>

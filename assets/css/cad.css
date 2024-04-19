@@ -1,0 +1,222 @@
+@import url('https://fonts.googleapis.com/css2?family=Urbanist:ital,wght@0,100..900;1,100..900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Shadows+Into+Light+Two&family=Urbanist:ital,wght@0,100..900;1,100..900&display=swap');
+body{
+    padding: 0;
+    margin: 0;
+    font-weight: 500;
+    color: white;
+    font-family: "Urbanist", sans-serif;
+    background-color: var(--cor--fundo);
+}
+
+:root {
+    --cor--fundo: #9978A7;
+    --cor--hover: #C4B1CC;
+    --cor--primaria: #9978A7;
+    --cor--hover2: #AA8FB6;
+    --cor--bgwhite: #E1E1E1;
+    --cor--escura: #6B5475;
+ }
+
+
+ .back-button {
+    position: absolute;
+    top: 24px;
+    left: 20px;
+    font-size: 30px;
+    cursor: pointer;
+ }
+ 
+ .back{
+    color: white;
+ }
+
+ .titulos {
+    height: 100px; 
+    display: flex;
+    align-items: center; 
+    justify-content: center; 
+    margin-top: 20px;
+    margin-bottom: 20px;
+    height: 45px;
+     
+      
+ }
+ 
+ .titulos h2 {
+    font-size: 1.6rem;
+    max-width: 100%;
+  
+ }
+
+form{
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    width: 100vw;
+    min-height: 100vh;
+}
+.header{
+  display: flex;
+  justify-content: space-between;
+  width: 100vw;
+}
+/*inputs*/
+#email, #pass, #pass-confirm{
+    width: 90vw;
+    margin-top: -0.6rem;
+  }
+
+  /*passo*/
+  
+  .passo{
+    margin-left: auto;
+    display: flex;
+    flex-direction: column;
+  }
+  .passo span{
+    font-size: 1.1em;
+  }
+  .carrossel{
+    padding-right: 25px;
+    display: flex;
+    width: 4em;
+    justify-content: space-between;
+  }
+  .container-grande{
+    background-color: #ffffff;
+    width: 2em;
+    height: .5em;
+    border-radius: 20px;
+  }
+  .container-pequeno{
+    background-color: #ffffff;
+    height: .5em;
+    width: .5em;
+    border-radius: 20px;
+  }
+
+  /*CheckBox*/
+.input{
+    margin-right: auto;
+  }
+  
+  .input[type="checkbox"] {
+    display: none;
+  }
+  
+  .custom-checkbox {
+    display: inline-block;
+    width: 20px;
+    height: 20px;
+    border-radius: 20px;
+    position: relative;
+    cursor: pointer;
+    background-color:#ffffff;
+  }
+  
+  .custom-checkbox::after {
+    content: "";
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 10px;
+    height: 10px;
+    background-color: var(--cor--escura);
+    border-radius: 20px;
+    opacity: 0;
+    transition: 0.3s;
+  }
+  
+  .input[type="checkbox"]:checked + .custom-checkbox::after {
+    opacity: 1;
+  }
+  /*CheckBox Fim*/
+  .container-privacidade{
+    display: flex;
+    justify-content: space-between;
+    width: 90vw;
+  }
+  .asteristico{
+    color: var(--cor--escura);
+    font-size: 1rem;
+  }
+  .privacidade{
+    font-size: 0.8em;
+    display: flex;
+    align-items: center;
+    width: 50vw;
+    justify-content: space-between;
+    padding-left: 5px;
+  }
+  .privacidade p{
+    width: 42vw;
+  }
+  .privacidade a{
+    text-decoration: underline;
+    color: #fff;
+  }
+  
+  input{
+    font-size: 16px;
+  }
+  
+  .input-container label{
+    display: flex;
+    margin-left: 10px;
+    margin-bottom: 0.9rem;
+  }
+  .input-container label:nth-child(1){
+    padding-top: 20px;
+  }
+  .input-container input {
+    border-radius: 30px;
+    width: 70vw;
+    height: 45px;
+    border: none;
+    box-shadow: 0px 0px 8px rgba(0, 0, 0, 0.308);
+}
+
+
+  .lista-login{
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      margin-bottom: 8px;
+  }
+  .login-container-lista{
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    width: 70vw;
+    margin-top: -0.2rem;
+  }
+  h3{
+    width: 70vw;
+    text-align: center;
+    font-weight: 500;
+  }
+
+  .prox{
+    margin-top: 1rem;
+    width: 50px;
+    height: 50px;
+    border-radius: 100px;
+    border: none;
+    background-color: white;
+    font-size: 18px;
+    color: var(--cor--escura);
+    box-shadow: 0px 0px 6px rgba(0, 0, 0, 0.204);
+    font-family: urbanist;
+    font-weight: 500;
+  }
+
+  .logofinal{
+ font-family: shadows into light two;
+ margin-top: -0.1rem;
+  }
+
+ 
+
+ 
