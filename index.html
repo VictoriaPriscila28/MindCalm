@@ -5,287 +5,96 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
     <meta name="theme-color" content="#5378BC"/>
-    <meta name="description" content="App de Saude Mental">
+    <meta name="description" content="web app de saude mental">
     <title>MindCalm</title>
 
-    <!-- font awesome cdn link  -->
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+    <!--=============== BOXICONS ===============-->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/boxicons@latest/css/boxicons.min.css">
 
     <!-- custom css file link  -->
     <link rel="stylesheet" href="css/style.css">
+
+    <!-- manifest  -->
 
     <link rel="manifest" href="manifest.json">
 
 </head>
 <body>
     
-<!-- header section starts  -->
+<!--=============== HEADER ===============-->
+<header class="header" id="header">
+    <nav class="nav container">
+        <a href="#" class="nav__logo">Marlon</a>
 
-<header class="header">
+        <div class="nav__menu" id="nav-menu">
+            <ul class="nav__list">
+                <li class="nav__item">
+                    <a href="#home" class="nav__link active-link">
+                        <i class='bx bx-home-alt nav__icon'></i>
+                        <span class="nav__name">Home</span>
+                    </a>
+                </li>
+                
+                <li class="nav__item">
+                    <a href="#about" class="nav__link">
+                        <i class='bx bx-user nav__icon'></i>
+                        <span class="nav__name">About</span>
+                    </a>
+                </li>
 
-<a href="#" class="logo"> <i class="	fas fa-hand-holding-heart"></i> <strong>Mind</strong>Calm</a>
+                <li class="nav__item">
+                    <a href="#skills" class="nav__link">
+                        <i class='bx bx-book-alt nav__icon'></i>
+                        <span class="nav__name">Skills</span>
+                    </a>
+                </li>
 
+                <li class="nav__item">
+                    <a href="#portfolio" class="nav__link">
+                        <i class='bx bx-briefcase-alt nav__icon'></i>
+                        <span class="nav__name">Portfolio</span>
+                    </a>
+                </li>
 
+                <li class="nav__item">
+                    <a href="#contactme" class="nav__link">
+                        <i class='bx bx-message-square-detail nav__icon'></i>
+                        <span class="nav__name">Contactme</span>
+                    </a>
+                </li>
+            </ul>
+        </div>
+
+        <img src="assets/img/perfil.png" alt="" class="nav__img">
+    </nav>
 </header>
 
-<!-- header section ends -->
+<main>
+    <!--=============== HOME ===============-->
+    <section class="container section section__height" id="home">
+        <h2 class="section__title">Home</h2>
+    </section>
 
-<!-- home section starts  -->
+    <!--=============== ABOUT ===============-->
+    <section class="container section section__height" id="about">
+        <h2 class="section__title">About</h2>
+    </section>
 
+    <!--=============== SKILLS ===============-->
+    <section class="container section section__height" id="skills">
+        <h2 class="section__title">Skills</h2>
+    </section>
 
+    <!--=============== PORTFOLIO ===============-->
+    <section class="container section section__height" id="portfolio">
+        <h2 class="section__title">Portfolio</h2>
+    </section>
 
- <!-- home section ends -->
-
-
-
-
-
-<!-- services section starts  -->
-
-<section class="services" id="services">
-
-    <h1 class="heading"> our <span>services</span> </h1>
-
-    <div class="box-container">
-
-        <div class="box">
-            <i class="fas fa-notes-medical"></i>
-            <h3>free checkups</h3>
-            <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Ad, omnis.</p>
-            <a href="#" class="btn"> learn more <span class="fas fa-chevron-right"></span> </a>
-        </div>
-
-        <div class="box">
-            <i class="fas fa-ambulance"></i>
-            <h3>24/7 ambulance</h3>
-            <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Ad, omnis.</p>
-            <a href="#" class="btn"> learn more <span class="fas fa-chevron-right"></span> </a>
-        </div>
-
-        <div class="box">
-            <i class="fas fa-user-md"></i>
-            <h3>expert doctors</h3>
-            <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Ad, omnis.</p>
-            <a href="#" class="btn"> learn more <span class="fas fa-chevron-right"></span> </a>
-        </div>
-
-        <div class="box">
-            <i class="fas fa-pills"></i>
-            <h3>medicines</h3>
-            <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Ad, omnis.</p>
-            <a href="#" class="btn"> learn more <span class="fas fa-chevron-right"></span> </a>
-        </div>
-
-        <div class="box">
-            <i class="fas fa-procedures"></i>
-            <h3>bed facility</h3>
-            <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Ad, omnis.</p>
-            <a href="#" class="btn"> learn more <span class="fas fa-chevron-right"></span> </a>
-        </div>
-
-        <div class="box">
-            <i class="fas fa-heartbeat"></i>
-            <h3>total care</h3>
-            <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Ad, omnis.</p>
-            <a href="#" class="btn"> learn more <span class="fas fa-chevron-right"></span> </a>
-        </div>
-
-    </div>
-
-</section>
-
-<!-- services section ends -->
-
-
-
-<!-- doctors section starts  -->
-
-<section class="doctors" id="doctors">
-
-    <h1 class="heading"> our <span>doctors</span> </h1>
-
-    <div class="box-container">
-
-        <div class="box">
-            <img src="image/doc-1.jpg" alt="">
-            <h3>win coder</h3>
-            <span>expert doctor</span>
-            <div class="share">
-            <a href="#" class="fab fa-facebook-f"></a>
-                <a href="#" class="fab fa-twitter"></a>
-                <a href="#" class="fab fa-instagram"></a>
-                <a href="#" class="fab fa-linkedin"></a>
-                
-            </div>
-        </div>
-
-        <div class="box">
-            <img src="image/doc-2.jpg" alt="">
-            <h3>win coder</h3>
-            <span>expert doctor</span>
-            <div class="share">
-            <a href="#" class="fab fa-facebook-f"></a>
-                <a href="#" class="fab fa-twitter"></a>
-                <a href="#" class="fab fa-instagram"></a>
-                <a href="#" class="fab fa-linkedin"></a>
-            </div>
-        </div>
-
-        <div class="box">
-            <img src="image/doc-3.jpg" alt="">
-            <h3>win coder</h3>
-            <span>expert doctor</span>
-            <div class="share">
-            <a href="#" class="fab fa-facebook-f"></a>
-                <a href="#" class="fab fa-twitter"></a>
-                <a href="#" class="fab fa-instagram"></a>
-                <a href="#" class="fab fa-linkedin"></a>
-            </div>
-        </div>
-
-        <div class="box">
-            <img src="image/doc-4.jpg" alt="">
-            <h3>win coder</h3>
-            <span>expert doctor</span>
-            <div class="share">
-            <a href="#" class="fab fa-facebook-f"></a>
-                <a href="#" class="fab fa-twitter"></a>
-                <a href="#" class="fab fa-instagram"></a>
-                <a href="#" class="fab fa-linkedin"></a>
-            </div>
-        </div>
-
-        <div class="box">
-            <img src="image/doc-5.jpg" alt="">
-            <h3>win coder</h3>
-            <span>expert doctor</span>
-            <div class="share">
-            <a href="#" class="fab fa-facebook-f"></a>
-                <a href="#" class="fab fa-twitter"></a>
-                <a href="#" class="fab fa-instagram"></a>
-                <a href="#" class="fab fa-linkedin"></a>
-            </div>
-        </div>
-
-        <div class="box">
-            <img src="image/doc-6.jpg" alt="">
-            <h3>win coder</h3>
-            <span>expert doctor</span>
-            <div class="share">
-            <a href="#" class="fab fa-facebook-f"></a>
-                <a href="#" class="fab fa-twitter"></a>
-                <a href="#" class="fab fa-instagram"></a>
-                <a href="#" class="fab fa-linkedin"></a>
-            
-            </div>
-        </div>
-        <div class="box">
-            <img src="image/doc-7.jpg" alt="">
-            <h3>win coder</h3>
-            <span>intern doctor</span>
-            <div class="share">
-                
-                <a href="#" class="fab fa-twitter"></a>
-                <a href="#" class="fab fa-instagram"></a>
-                <a href="#" class="fab fa-linkedin"></a>
-            </div>
-        </div>
-        <div class="box">
-            <img src="image/doc-8.jpg" alt="">
-            <h3>win coder</h3>
-            <span>expert doctor</span>
-            <div class="share">
-            <a href="#" class="fab fa-facebook-f"></a>
-                <a href="#" class="fab fa-twitter"></a>
-                <a href="#" class="fab fa-instagram"></a>
-                <a href="#" class="fab fa-linkedin"></a>
-            </div>
-        </div>
-        <div class="box">
-            <img src="image/doc-9.jpg" alt="">
-            <h3>win coder</h3>
-            <span>expert doctor</span>
-            <div class="share">
-            <a href="#" class="fab fa-facebook-f"></a>
-                <a href="#" class="fab fa-twitter"></a>
-                <a href="#" class="fab fa-instagram"></a>
-                <a href="#" class="fab fa-linkedin"></a>
-            </div>
-        </div>
-
-    </div>
-
-</section>
-
-<!-- doctors section ends -->
-
-<!-- appointmenting section starts   -->
-
-<section class="appointment" id="appointment">
-
-    <h1 class="heading"> <span>appointment</span> now </h1>    
-
-    <div class="row">
-
-        <div class="image">
-            <img src="image/appointment-img.svg" alt="">
-        </div>
-
-        <form action="<?php echo $_SERVER['PHP_SELF'];?>" method="post">
-        <?php
-            if(isset($message)) {
-                foreach($message as $message) {
-                echo'<p class ="message">'.$message.'</p>';
-            }
-            }
-        ?>
-      
-            <h3>make appointment</h3>
-            <input type="text"name="name" placeholder="your name" class="box">
-            <input type="number"name="number" placeholder="your number" class="box">
-            <input type="email"name="email" placeholder="your email" class="box">
-            <input type="date"name="date" class="box">
-            <input type="submit" name="submit" value="appointment now" class="btn">
-        </form>
-
-    </div>
-
-</section>
-
-<!-- appointmenting section ends -->
-
-
-
-
-
-<!-- blogs section ends -->
-
-<!-- footer section starts  -->
-
-<!--Navegação-->
-<footer class="bottom-navbar">
-    <a href="home.html">
-        <i class="fas fa-home" alt="home"></i>
-        <span>home</span>
-    </a>  <a href="clinicas.html">
-        <i class="fa-solid fa-map" alt="mapa"></i>
-        <span>Clinicas</span>
-    </a>
-    <a href="conversa.html">
-        <i class="fa-solid fa-book-open"></i>
-        <span>chat</span>
-    </a>
-  
-    <a href="mais.html" aria-label="area-perfil">
-        <i class="fas fa-user" alt="perfil"></i>
-        <span>Perfil</span>
-</footer>
-
-   
-
-</section>
-
-<!-- footer section ends -->
+    <!--=============== CONTACTME ===============-->
+    <section class="container section section__height" id="contactme">
+        <h2 class="section__title">Contactme</h2>
+    </section>
+</main>
 
 
 <!-- js file link  -->
