@@ -596,3 +596,40 @@ section:nth-child(even){
     }
 
 }
+
+/*Navegação*/
+.bottom-navbar {
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+    padding: 25px 0 ;
+    border-radius: 30px 30px 0px 0px;
+    background-color: var(--cor--fundo) 
+}
+ 
+ 
+ .bottom-navbar a:hover {
+    color:var(--cor--hover);
+ }
+ 
+ 
+ .bottom-navbar a {
+  display: flex;
+ flex-direction: column;
+   align-items: center;
+ text-align: center;
+  text-decoration: none;
+   color: #965d5d;
+   font-size: 18px;
+ }
+/*muda a cor do bottom navigation*/
+ :root {
+    --cor--fundo: #9978A7;
+    --cor--hover: #C4B1CC;
+    --cor--bg:#F5F2F6;
+    --cor--hover2: #AA8FB6;
+    --cor--bgwhite: #E1E1E1;
+    --cor--escura: #5D4966;
+ }

@@ -1,0 +1,27 @@
+{
+  "name": "MindCalm",
+  "short_name": "MindCalm",
+  "start_url": "index.html",
+  "lang": "pt",
+  "theme_color": "#d63384",
+  "background_color": "#fff",
+  "display": "standalone",
+  "orientation": "portrait",
+  "scope": "/",
+  "icons": [
+      {
+        "src": "icons/196.png",
+        "sizes": "196x196",
+        "type": "image/png",
+        "purpose": "any"
+      },
+      {
+          "src": "icons/512.png",
+          "sizes": "512x512",
+          "type": "image/png",
+          "purpose": "maskable"
+        }
+  ]
+}
+
+
