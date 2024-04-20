@@ -16,88 +16,82 @@
 
     <!-- manifest  -->
     <link rel="manifest" href="manifest.json">
-
+    <style>
+        /* Estilos para as caixas */
+        .box {
+            border: 1px solid #ccc;
+            padding: 20px;
+            margin-bottom: 20px;
+            background-color: #f9f9f9;
+        }
+        /* Estilos para os links */
+        .box a {
+            text-decoration: none;
+            color: #333;
+        }
+    </style>
 </head>
 <body>
-    
-<!--=============== HEADER ===============-->
-<header class="header" id="header">
-    <nav class="nav container">
-        <a href="#" class="nav__logo">Geraldo</a>
+    <div class="nav__menu" id="nav-menu">
+		<ul class="nav__list">
+			<li class="nav__item">
+				<a href="index.html" class="nav__link ">
+					<i class='bx bx-home-alt nav__icon'></i>
+					<span class="nav__name">Home</span>
+				</a>
+			</li>
+			
+			<li class="nav__item">
+				<a href="chat.html" class="nav__link ">
+					<i class='bx bx-user nav__icon'></i>
+					<span class="nav__name">Chat</span>
+				</a>
+			</li>
 
-        <div class="nav__menu" id="nav-menu">
-            <ul class="nav__list">
-                <li class="nav__item">
-                    <a href="#home" class="nav__link active-link">
-                        <i class='bx bx-home-alt nav__icon'></i>
-                        <span class="nav__name">Home</span>
-                    </a>
-                </li>
-                
-                <li class="nav__item">
-                    <a href="chat.html" class="nav__link">
-                        <i class='bx bx-user nav__icon'></i>
-                        <span class="nav__name">Chat</span>
-                    </a>
-                </li>
+			<li class="nav__item">
+				<a href="clinicas.html" class="nav__link">
+					<i class='bx bx-book-alt nav__icon'></i>
+					<span class="nav__name">Clinicas</span>
+				</a>
+			</li>
 
-                <li class="nav__item">
-                    <a href="clinicas.html" class="nav__link">
-                        <i class='bx bx-book-alt nav__icon'></i>
-                        <span class="nav__name">Clinicas</span>
-                    </a>
-                </li>
+			<li class="nav__item">
+				<a href="diario.html" class="nav__link">
+					<i class='bx bx-briefcase-alt nav__icon'></i>
+					<span class="nav__name">Diario</span>
+				</a>
+			</li>
 
-                <li class="nav__item">
-                    <a href="diario.html" class="nav__link">
-                        <i class='bx bx-briefcase-alt nav__icon'></i>
-                        <span class="nav__name">Diario</span>
-                    </a>
-                </li>
+			<li class="nav__item">
+				<a href="config.html" class="nav__link active-link">
+					<i class='bx bx-message-square-detail nav__icon'></i>
+					<span class="nav__name">Configurações</span>
+				</a>
+			</li>
+		</ul>
+	</div>
+    <div class="box">
+        <h2>Notificações</h2>
+        <p>Configure suas preferências de notificação aqui.</p>
+        <button type="button" id="btn_permission">Notificação</button>
+    </div>
 
-                <li class="nav__item">
-                    <a href="#contactme" class="nav__link">
-                        <i class='bx bx-message-square-detail nav__icon'></i>
-                        <span class="nav__name">Configurações</span>
-                    </a>
-                </li>
-            </ul>
-        </div>
+    <div class="box">
+        <h2>Alterar Perfil</h2>
+        <p>Atualize suas informações pessoais e preferências.</p>
+        <a href="#">Editar Perfil</a>
+    </div>
 
-        <img src="../img/foto_perfil_geraldo.jpeg" alt="" class="nav__img">
-    </nav>
-</header>
+    <div class="box">
+        <h2>Lembrete</h2>
+        <p>Defina um lembrete importante para você.</p>
+        <a href="#">Criar Lembrete</a>
+    </div>
 
-<main>
-    <!--=============== HOME ===============-->
-    <section class="container section section__height" id="home">
-        <h2 class="section__title">Home</h2>
-    </section>
-
-    <!--=============== ABOUT ===============-->
-    <section class="container section section__height" id="about">
-        <h2 class="section__title">About</h2>
-    </section>
-
-    <!--=============== SKILLS ===============-->
-    <section class="container section section__height" id="skills">
-        <h2 class="section__title">Skills</h2>
-    </section>
-
-    <!--=============== PORTFOLIO ===============-->
-    <section class="container section section__height" id="portfolio">
-        <h2 class="section__title">Portfolio</h2>
-    </section>
-
-    <!--=============== CONTACTME ===============-->
-    <section class="container section section__height" id="contactme">
-        <h2 class="section__title">Contactme</h2>
-    </section>
-</main>
-
-
-<!-- js file link  -->
-<script src="js/script.js"></script>
-
+    <div class="box">
+        <h2>Sair</h2>
+        <p>Encerre sua sessão.</p>
+        <a href="#">Sair</a>
+    </div>
 </body>
 </html>
