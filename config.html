@@ -32,6 +32,8 @@
     </style>
 </head>
 <body>
+    <header class="header" id="header">
+    <nav class="nav container"></nav>
     <div class="nav__menu" id="nav-menu">
 		<ul class="nav__list">
 			<li class="nav__item">
@@ -66,14 +68,21 @@
 				<a href="config.html" class="nav__link active-link">
 					<i class='bx bx-message-square-detail nav__icon'></i>
 					<span class="nav__name">Configurações</span>
+                    
 				</a>
+                
 			</li>
+            
 		</ul>
+        
+
+        
 	</div>
+</header>
     <div class="box">
         <h2>Notificações</h2>
         <p>Configure suas preferências de notificação aqui.</p>
-        <button type="button" id="btn_permission">Notificação</button>
+        <p><button onclick="requestPermission()">notificação</button></p>
     </div>
 
     <div class="box">
@@ -93,5 +102,7 @@
         <p>Encerre sua sessão.</p>
         <a href="#">Sair</a>
     </div>
+    <!-- js file link  -->
+<script src="js/script.js"></script>
 </body>
 </html>

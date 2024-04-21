@@ -16,6 +16,25 @@
 
     <!-- manifest  -->
     <link rel="manifest" href="manifest.json">
+    <style>
+
+    body {
+        font-family: Arial, sans-serif;
+        background-color: #f9f9f9;
+        padding: 20px;
+    }
+    .diario-box {
+        background-color: #fff;
+        border: 1px solid #ccc;
+        padding: 20px;
+        border-radius: 5px;
+        margin-bottom: 20px;
+    }
+    .emoji {
+        font-size: 24px;
+        margin-right: 10px;
+    }
+</style>
 
 </head>
 <body>
@@ -56,7 +75,7 @@
                 </li>
 
                 <li class="nav__item">
-                    <a href="#contactme" class="nav__link">
+                    <a href="config.html" class="nav__link">
                         <i class='bx bx-message-square-detail nav__icon'></i>
                         <span class="nav__name">Configurações</span>
                     </a>
@@ -64,7 +83,7 @@
             </ul>
         </div>
 
-        <img src="../img/foto_perfil_geraldo.jpeg" alt="" class="nav__img">
+        <img src="../image/foto_perfil_geraldo.jpeg" alt="" class="nav__img">
     </nav>
 </header>
 
@@ -74,6 +93,20 @@
     <!--=============== PORTFOLIO ===============-->
     <section class="container section section__height" id="portfolio">
         <h2 class="section__title">Diário</h2>
+        <div class="diario-box">
+            <p>Como você está se sentindo hoje? 😊</p>
+            <textarea id="entrada" rows="5" cols="30" placeholder="Escreva aqui..."></textarea>
+            <button onclick="salvarEntrada()">Salvar</button>
+        </div>
+    
+        <script>
+            function salvarEntrada() {
+                const entradaTexto = document.getElementById('entrada').value;
+                // Aqui você pode adicionar a lógica para salvar a entrada em algum lugar (por exemplo, em um banco de dados ou arquivo).
+                alert('Entrada salva com sucesso! 📔');
+            }
+        </script>
+        
     </section>
 
    
